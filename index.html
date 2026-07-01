@@ -3,10 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My first live page</title>
-    
+    <title>Hello Everyone</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#4f46e5,#7c3aed);
+            color:white;
+        }
+
+        .hero{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:20px;
+        }
+
+        .content{
+            max-width:700px;
+        }
+
+        h1{
+            font-size:4rem;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:1.2rem;
+            line-height:1.8;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:15px 35px;
+            background:white;
+            color:#4f46e5;
+            text-decoration:none;
+            border-radius:50px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#f1f1f1;
+            transform:translateY(-3px);
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, Everyone</h1>
+
+    <section class="hero">
+        <div class="content">
+            <h1>Hello Everyone 👋</h1>
+
+            <p>
+                Welcome to our website! We're glad you're here.
+                Explore amazing content, discover new ideas, and enjoy
+                a clean and modern web experience.
+            </p>
+
+            <a href="#" class="btn">Get Started</a>
+        </div>
+    </section>
+
 </body>
 </html>
